@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn"onclick="register()">Register</button>
+
+            </div>
+
+       
+        <div class="social-media">
+            <img  width="40px"src="facebook logo.png">
+            <img  width="60px"src="github logo.png">
+            <img  width="40px"src="instagram logo.jpg">
+            <img  width="35px"src="twitter-logo-11.png">
+        </div>
+
+      
+        <form class="login-form" id="login">
+            <input type="text" class="form-feild"placeholder="username" required>
+            <input type="password" class="form-feild"placeholder="password" required>
+            <input type="checkbox" class="checkbox"><span>Remember password</span>
+            <button type="submit" class="submit">Login</button>
+
+        </form>
+
+
+        
+        <form class="login-form" id="register">
+            <input type="text" class="form-feild"placeholder="username" required>
+            <input type="email" class="form-feild"placeholder="Email" required>
+
+            <input type="password" class="form-feild"placeholder="password" required>
+            <input type="checkbox" class="checkbox"><span>I Accept To The Term & condition</span>
+            <button type="submit" class="submit">Register</button>
+
+        </form>
+    </div>
+</div>
+
+
+<script>
+     var x=document.getElementById("login");
+     var y=document.getElementById("register");
+     var z=document.getElementById("btn");
+
+     function register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="50px";
+
+
+     }
+     function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+
+     }
+
+
+</script>
+    
+</body>
+</html>
